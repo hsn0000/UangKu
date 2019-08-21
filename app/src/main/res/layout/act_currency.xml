@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:textAlignment="center"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView android:layout_width="200dp"
+               android:layout_height="150dp"
+               android:src="@drawable/ic_monetization_on_black_24dp"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Mata uang."
+              android:textStyle="bold"
+              android:textColor="@color/hitam"
+              android:textSize="20dp"
+              android:textAlignment="center"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_margin="10dp"
+              android:layout_height="wrap_content"
+              android:text="Pilih mata uang anda?"
+              android:textSize="15dp"
+              android:textAlignment="center"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"/>
+
+
+
+    <Button android:layout_width="200dp"
+            android:text="NEXT"
+            android:id="@+id/btn_pribadi"
+            android:background="@drawable/shape_satu"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/putih"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
