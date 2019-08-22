@@ -10,7 +10,6 @@
     <include
             android:id="@+id/latToolbar"
             layout="@layout/toolbar"/>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
@@ -32,8 +31,7 @@
             android:layout_height="match_parent"
             android:id="@+id/fragment_container"
             android:orientation="vertical"
-            android:layout_below="@+id/latToolbar"
-            android:layout_above="@+id/navView">
+            android:layout_below="@+id/latToolbar">
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcView"
@@ -42,7 +40,6 @@
                 android:layout_alignTop="@+id/fragment_container"
                 android:layout_alignStart="@+id/fragment_container"/>
     </LinearLayout>
-
 
     <LinearLayout
             android:id="@+id/navView"
