@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+          android:icon="@drawable/ic_proses_black_24dp"
+          android:title="proses"/>
+
+    <item android:id="@+id/calender"
+          android:icon="@drawable/ic_kalender_invitation_black_24dp"
+          android:title="kalender"/>
+
+
+    <item android:id="@+id/account"
+          android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+          android:title="account" />
+
+
+</menu>
