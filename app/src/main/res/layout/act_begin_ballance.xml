@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
               android:textAlignment="center"
               android:gravity="center"
               android:layout_width="match_parent"
@@ -8,7 +8,7 @@
 
     <ImageView android:layout_width="200dp"
                android:layout_height="150dp"
-               android:src="@mipmap/ic_launcher_foreground"/>
+               app:srcCompat="@mipmap/ic_launcher_foreground"/>
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="Uang Pertama"
@@ -24,13 +24,15 @@
 
 
         <EditText
-                android:id="@+id/input_pribadi"
-                android:inputType="text"
+                android:id="@+id/et_uang"
+                android:inputType="number"
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:hint="Rp.0" />
 
-    <Button android:layout_width="200dp"
+    <Button
+            android:id="@+id/btn_next2"
+            android:layout_width="200dp"
             android:text="NEXT"
             android:background="@drawable/shape_satu"
             android:layout_marginTop="10dp"

@@ -24,8 +24,9 @@
             android:background="@drawable/lengkung">
         <LinearLayout
                 android:layout_margin="15dp"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:orientation="vertical"
+                android:layout_weight="1"
                 android:background="@drawable/lengkungbiru"
                 android:layout_height="55dp">
             <TextView
@@ -50,7 +51,8 @@
         </LinearLayout>
         <LinearLayout
                 android:layout_margin="15dp"
-                android:layout_width="150dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:background="@drawable/lengkungbiru"
                 android:layout_height="55dp">
