@@ -2,6 +2,7 @@ package com.example.uangku.fragment
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +21,10 @@ class FragmentHome : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val xnxx = activity!!.intent.getStringExtra("balance")
+        tv_balance.text = xnxx
+
         fab.setOnClickListener{
             startActivity(Intent(activity!!, Add_record::class.java))
         }
