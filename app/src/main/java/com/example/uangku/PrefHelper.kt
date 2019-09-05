@@ -18,14 +18,14 @@ class PrefHelper {
                 Context.MODE_PRIVATE)
     }
 
-    fun saveUID(uid: String) {
+    fun saveID(id: Long) {
         val edit = sharedSet.edit()
-        edit.putString(USER_ID, uid)
+        edit.putLong(USER_ID, id)
         edit.apply()
     }
 
-    fun getUID(): String? {
-        return sharedSet.getString(USER_ID, "")
+    fun getID(): Long? {
+        return sharedSet.getLong(USER_ID, 0)
     }
 
     fun saveCounterId(counter: Int) {

@@ -13,4 +13,7 @@ interface User_DAO {
 
     @Query("select * from User_Entity")
     fun readDB(): List<User_Entity>
+
+    @Query("select * from User_Entity where user_id = :id")
+    fun readDB(id : Long): List<User_Entity>
 }

@@ -30,6 +30,7 @@ class RegisterBalance : AppCompatActivity() {
         btn_next2.setOnClickListener {
             Thread {
                 pref.setStatus(true)
+
                 var user = User_Entity()
                 user.user_id = intent.getLongExtra("id", 0).toInt()
                 user.user_name = intent.getStringExtra("name")
